@@ -1,8 +1,15 @@
 :root {
-	--spacing: 1rem;
+	--spacing: 3rem;
 
 	font-family: 'Helvetica';
 	font-size: 125%;
+}
+
+@media (width > 600px) {
+	:root {
+		font-size: 150%;
+		--spacing: 2rem;
+	}
 }
 
 body {
@@ -11,6 +18,19 @@ body {
 
 h1 {
 	font-size: 2rem;
+
+	@media (width > 800px) {
+	font-size: 4rem;
+	}
+}
+
+h2 {
+	font-size: 1rem;
+	font-weight: lighter;
+
+	@media (width > 800px) {
+	font-size: 3rem;
+	}
 }
 
 p {
