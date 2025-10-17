@@ -1,12 +1,18 @@
 :root {
+	--spacing: 1rem;
+
 	font-family: 'Helvetica';
 	font-size: 125%;
 }
 
 body {
-	padding: 2rem;
+	padding: var(--spacing);
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2rem;
+}
+
+p {
+	margin-block-start: calc(2x * var(--spacing));
 }
