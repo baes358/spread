@@ -1,5 +1,7 @@
 :root {
 	--spacing: 3rem;
+    --color-bl:#000000;
+    --color-wh:#ffffff;
 
 	font-family: 'Helvetica';
 	font-size: 125%;
@@ -10,6 +12,12 @@
 		font-size: 150%;
 		--spacing: 2rem;
 	}
+}
+@media print {
+    :root{
+        --color-bl:#000000;
+        --color-wh:#ffffff;
+    }
 }
 
 body {
