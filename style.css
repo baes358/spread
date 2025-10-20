@@ -1,9 +1,30 @@
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("./fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Instrument Italic";
+  src: url("./fonts/InstrumentSans-Italic-VariableFont_wdth,wght.ttf") format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Meie Script";
+  src: url("./fonts/MeieScript-Regular.ttf") format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+
 :root {
 	--spacing: 3rem;
     --color-bl:#000000;
     --color-wh:#ffffff;
 
-	font-family: 'Helvetica';
+	font-family: 'Instrument Sans';
 	font-size: 125%;
 }
 
@@ -25,7 +46,10 @@ body {
 }
 
 h1 {
-	font-size: 2rem;
+	font-family:"meie script";
+    font-size: 2.5rem;
+    text-align: center;
+
 
 	@media (width > 800px) {
 	font-size: 4rem;
@@ -35,12 +59,31 @@ h1 {
 h2 {
 	font-size: 1rem;
 	font-weight: lighter;
+    text-align: center;
+    font-weight: 600;
+    line-height: 120%;
+
 
 	@media (width > 800px) {
 	font-size: 3rem;
 	}
 }
+h2 span{
+    font-family:"meie script";
+    font-size: 1.75rem;
+}
 
 p {
 	margin-block-start: calc(2x * var(--spacing));
+}
+
+
+.nav-list{
+    display:flex;
+    /* flex-direction:row; */
+    justify-content: space-between;
+}
+.nav-links{
+    display:flex;
+    justify-content: space-between;
 }
