@@ -78,11 +78,8 @@ main {
     /* padding-inline:1.25rem; */
     margin-block-end:2rem;
     /* border-radius: 25rem; */
-
-    
-    
-    
 }
+
 article{
     padding-block-start: 3rem;
     padding-block-end: 7rem;
@@ -100,7 +97,6 @@ article{
 	
     
 }
-
 
 
 main h1{
@@ -145,6 +141,7 @@ p {
 }
 .art-container{
 	bottom: 30vh;
+	padding-block-end: 40rem;
 
 }
 article.rise{
@@ -155,9 +152,10 @@ article.rise{
 }
 
 footer{
-    display:flex;
+	display:flex;
 	justify-content: space-between;
 	position:fixed;
+	width: 100vw;
 	padding-inline: 1rem;
 	padding-block-start:1rem;
 	padding-block-end:1rem;
