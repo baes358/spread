@@ -41,9 +41,19 @@
     }
 }
 
-body {
-	padding: var(--spacing);
+
+
+header{
+    /* position:relative; */
+    /* z-index:1; */
+    
 }
+body {
+    min-height: 150vh;
+    
+    position:relative;
+}
+
 
 h1 {
 	font-family:"meie script";
@@ -56,13 +66,40 @@ h1 {
 	}
 }
 
+
+
+main {
+    background-color: aqua;
+    /* padding-block: 3rem; */
+    padding-inline:1.25rem;
+    margin-block:2rem;
+    border-radius: 25rem;
+    
+    
+    
+}
+article{
+    padding-block: 3rem;
+    position:relative;
+    text-wrap: pretty;
+
+    
+}
+
+
+
+main h1{
+    
+}
 h2 {
+    /* display:; */
 	font-size: 1rem;
 	font-weight: lighter;
     text-align: center;
+    justify-self: center;
     font-weight: 600;
     line-height: 120%;
-
+    width:80%;
 
 	@media (width > 800px) {
 	font-size: 3rem;
@@ -77,7 +114,9 @@ p {
 	margin-block-start: calc(2x * var(--spacing));
 }
 
-
+#project-title{
+    margin-block-start:3rem;
+}
 .nav-list{
     display:flex;
     /* flex-direction:row; */
@@ -85,5 +124,5 @@ p {
 }
 .nav-links{
     display:flex;
-    justify-content: space-between;
+    gap: 1rem;
 }
