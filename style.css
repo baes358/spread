@@ -69,20 +69,31 @@ h1 {
 
 
 main {
-    background-color: aqua;
+    /* background-color: aqua; */
     /* padding-block: 3rem; */
-    padding-inline:1.25rem;
-    margin-block:2rem;
-    border-radius: 25rem;
+    /* padding-inline:1.25rem; */
+    margin-block-end:2rem;
+    /* border-radius: 25rem; */
+        
+
     
     
     
 }
 article{
-    padding-block: 3rem;
-    position:relative;
+    padding-block-start: 3rem;
+    padding-block-end: 7rem;
+    padding-inline:3rem;
+    /* position:sticky; */
     text-wrap: pretty;
+    bottom: 10rem;
+    /* top:30vh pushes the article text and the actual container (in blue) down based on units. */
 
+    top:30vh;
+    position:relative;
+    z-index:10;
+    background-color: aqua;
+    border-radius: 25rem;
     
 }
 
@@ -116,6 +127,25 @@ p {
 
 #project-title{
     margin-block-start:3rem;
+}
+
+.site-header{
+    width:100vw;
+    position:fixed;
+    top:0;
+    z-index:0;
+    height:1rem;
+
+}
+article.rise{
+    /* top:10rem pushes the article text and the actual container (in blue) down based on units. */
+    
+    /* margin-block-end: 3rem; */
+
+}
+
+footer{
+    z-index:5;
 }
 .nav-list{
     display:flex;
