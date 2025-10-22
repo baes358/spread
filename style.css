@@ -80,7 +80,7 @@ main {
     /* border-radius: 25rem; */
 }
 
-article{
+article {
     padding-block-start: 3rem;
     padding-block-end: 7rem;
     padding-inline:3rem;
@@ -88,29 +88,25 @@ article{
     text-wrap: pretty;
     bottom: 30vh;
     /* top:30vh pushes the article text and the actual container (in blue) down based on units. */
-	top:30vh;
+	top:40vh;
     /* bottom: 30vh; */
     position:relative;
     z-index:10;
-    background: radial-gradient(#fac958,#f28361);
+    background: radial-gradient(#ffdab2,#ffc28d);
     border-radius: 25rem;
 	
     
 }
 
-
-main h1{
-    
-}
 h2 {
     /* display:; */
-	font-size: 1rem;
 	font-weight: lighter;
     text-align: center;
     justify-self: center;
     font-weight: 600;
     line-height: 120%;
     width:80%;
+	padding-block-start: 5rem;
 
 	@media (width > 800px) {
 	font-size: 3rem;
@@ -119,6 +115,13 @@ h2 {
 h2 span{
     font-family:"meie script";
     font-size: 1.75rem;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	padding-inline-start: 7rem;
+	padding-inline-end: 7rem;
 }
 
 p {
