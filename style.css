@@ -55,7 +55,7 @@ body {
     /* background-color: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
     position:relative;
 	/* background: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
-	
+
 }
 
 
@@ -92,7 +92,7 @@ article{
     /* bottom: 30vh; */
     position:relative;
     z-index:10;
-    background: radial-gradient(#fac958,#f28361);
+    background: radial-gradient(#ffe3a3,#ffbf83);
     border-radius: 25rem;
 	
     
@@ -123,6 +123,8 @@ h2 span{
 
 p {
 	margin-block-start: calc(2x * var(--spacing));
+	padding-block-end: 2rem;
+	margin-inline-end: 8rem;
 }
 
 #project-title{
@@ -192,5 +194,8 @@ footer p{
     font-size: 0.5rem;
     line-height: 100%;
     text-align: left;
+	display: flex;
+    flex-direction: column;
 
 }
+
