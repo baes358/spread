@@ -182,3 +182,15 @@ footer p{
     display:flex;
     gap: 1rem;
 }
+
+.cite-group{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+.citation{
+    font-size: 0.5rem;
+    line-height: 100%;
+    text-align: left;
+
+}
