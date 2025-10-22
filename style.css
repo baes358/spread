@@ -55,7 +55,7 @@ body {
     /* background-color: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
     position:relative;
 	/* background: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
-
+	
 }
 
 
@@ -92,7 +92,7 @@ article{
     /* bottom: 30vh; */
     position:relative;
     z-index:10;
-    background: radial-gradient(#ffe3a3,#ffbf83);
+    background: radial-gradient(#fac958,#f28361);
     border-radius: 25rem;
 	
     
@@ -123,8 +123,6 @@ h2 span{
 
 p {
 	margin-block-start: calc(2x * var(--spacing));
-	padding-block-end: 2rem;
-	margin-inline-end: 8rem;
 }
 
 #project-title{
@@ -187,15 +185,21 @@ footer p{
 
 .cite-group{
     display:grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
     gap: 1rem;
+    margin-block:1rem;
 }
 .citation{
     font-size: 0.5rem;
-    line-height: 100%;
+    line-height: 110%;
     text-align: left;
-	display: flex;
-    flex-direction: column;
+    margin-block-start:.25rem;
+
+}
+.cite-text{
 
 }
 
+.cite-quote{
+    font-size: .7rem;
+}
