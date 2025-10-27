@@ -71,7 +71,7 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
 	padding-block-start: 5rem;
-	margin-inline: 15rem;
+	margin-inline: auto;
 
 
 	@media (width > 800px) {
@@ -83,11 +83,13 @@ h1 {
     text-align: center;
 } */
 
-/* #project-title{
+#project-title{
     background: radial-gradient(#ffdab2,#ffc28d);
     border-radius: 100rem;
-    height: 100rem;
-} */
+    height: 500px;
+    width:500px;
+    line-height: 115%;
+}
 
 main {
     /* background-color: aqua; */
@@ -159,12 +161,13 @@ p {
 
 .site-header{
     width:100vw;
-    position:fixed;
+    /* position:fixed; */
     /* top: 1rem; */
 	padding-block-start:1rem;
 	padding-inline: 1rem;
     z-index:0;
     height:1rem;
+    background: linear-gradient(to bottom, #AF184D,#252475, #FF5802, #ffffff);
 
 }
 .art-container{
@@ -192,7 +195,7 @@ footer{
 	z-index:0;
 	text-align: center;
 	margin-block-start: 20rem;
-	color: #ffffff;
+	color: #000000;
 	background: transparent;
 	/* min-height:30rem; FF5802*/
 	bottom:1rem;
