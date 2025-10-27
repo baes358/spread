@@ -225,7 +225,7 @@ footer p{
 .cite-group{
     display:grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    column-gap: 1rem;
     margin-block:1rem;
     position:relative;
     min-height: 25vh;
@@ -239,10 +239,29 @@ footer p{
 
 .title-text{
     display:grid;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr ;
     border-block-start: 2px solid #000000;
     padding-block-start: 1rem;
     column-gap: 1rem;
+}
+.sec-title {
+    position:sticky;
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+    
+    top:0;
+    padding-block:1rem;
+    min-height:fit-content;
+
+    background: linear-gradient(to top,#ffffffc5 0%, #FFFFFFE6 50%, #FFFFFFFF 100%);    
+    backdrop-filter: blur(10px);
+    mask: linear-gradient(white, white, white, white, transparent);
+    /* backdrop-filter: blur(100px); */
+
+    h3{
+        font-size: 1.5rem;
+    }
 }
 
 .title-container {
@@ -259,32 +278,37 @@ footer p{
 	}
 }
 
-.sec-title {
-	font-weight: bold;
-	font-size: 1.5rem;
-	line-height: 1.5rem;
-	text-wrap: ;
-}
+
 
 .empty {
 	opacity: 0;
 }
 .gradient{
     position:sticky;
-    background: linear-gradient(to bottom, #FF5802, #AF184D,#252475);
+    /* background: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
     min-height: 10rem;
     top:0;
+    font-weight: 600;
+    letter-spacing: -10px;
 
 	p {
+        height: 100%;
  		text-align:center;
+        margin-block: auto;
 		color: white;
 		font-size: 5rem;
+        line-height:10rem;
+
+    
 	}
     
 }
+#g01{
+    background: linear-gradient(to bottom, #256E81,#010D28);
+}
 
-.gradient-02 {
-	background: linear-gradient(to bottom, #256E81,#010D28);
+#g02 {
+	background: linear-gradient(to bottom, #F4836D, #D66195, #953D7A, #652D66, #301A4B);
 	position:sticky;
     min-height: 10rem;
     top:0;
@@ -296,7 +320,7 @@ footer p{
 	}
 }
 
-.gradient-03 {
+#g03 {
 	background: linear-gradient(to bottom, #DF291E,#FC6337,#FC7641,#9F5D6E,#404974);
 	position:sticky;
     min-height: 10rem;
@@ -309,7 +333,7 @@ footer p{
 	}
 }
 
-.gradient-04 {
+#g04 {
 	background: linear-gradient(to bottom, #C18166,#E4C8A3,#26B1D0,#29618E,#242F4D);
 	position:sticky;
     min-height: 10rem;
@@ -350,12 +374,27 @@ footer p{
 	line-height: 1.25rem;
 	padding-inline-start: 10rem;
     order:1;
-	background: linear-gradient(to bottom, #FF5802, #AF184D,#252475);
+	/* background: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
 
     @media (width > 800px) {
 	order:3;
 	}
 	
+}
+
+.quote03 p{
+    font-weight:700;
+    background-image: linear-gradient(#DF291E,#FC6337,#FC7641,#9F5D6E,#404974);
+    color:transparent;
+    background-clip:text;
+
+}
+
+.quote04 p{
+    font-weight:700;
+    background-image: linear-gradient(#C18166,#E4C8A3,#26B1D0,#29618E,#242F4D);
+    color:transparent;
+    background-clip:text;
 }
 
 #lastquote {
