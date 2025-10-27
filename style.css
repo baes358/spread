@@ -448,6 +448,13 @@ footer p{
 	}
 }
 
+.cite {
+	font-size: .75rem;
+	font-style: italic;
+	padding-block-end: 2rem;
+	padding-inline-start: 2rem;
+}
+
 .cite-quote{
     font-size: 1rem;
 	font-weight: bold;
@@ -463,10 +470,11 @@ footer p{
 }
 
 .quote03 p{
-	font-size: 1.5rem;
-	line-height: 1.4rem;
+	font-size: 1.65rem;
+	line-height: 2rem;
     font-weight:700;
-	/* padding-inline-start: 2rem; */
+	padding-inline-start: 2rem;
+	padding-block-start: 2rem;
     background-image: linear-gradient(#DF291E,#FC6337,#FC7641,#9F5D6E,#404974);
     color:transparent;
     background-clip:text;
