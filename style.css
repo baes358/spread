@@ -360,7 +360,7 @@ footer p{
     position:sticky;
     min-height:10rem;
     top:0;
-    margin-inline:auto;
+    /* margin-inline:auto; */
 
 	p {
 		text-align: center;
