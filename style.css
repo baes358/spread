@@ -17,6 +17,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Figtree";
+  src: url("./index.html") format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
 
 
 :root {
@@ -25,7 +33,7 @@
     --color-wh:#ffffff;
 
 
-	font-family: Helvetica, sans-serif;
+	font-family: "Figtree";
 	font-size: 125%;
 }
 
@@ -334,7 +342,7 @@ footer p{
 }
 
 #g04 {
-	background: linear-gradient(to bottom, #C18166,#E4C8A3,#26B1D0,#29618E,#242F4D);
+	background: linear-gradient(to bottom, #9aecff,#26B1D0,#29618E,#242F4D);
 	position:sticky;
     min-height: 10rem;
     top:0;
@@ -383,7 +391,10 @@ footer p{
 }
 
 .quote03 p{
+	font-size: 1.5rem;
+	line-height: 2rem;
     font-weight:700;
+	padding-inline-start: 2rem;
     background-image: linear-gradient(#DF291E,#FC6337,#FC7641,#9F5D6E,#404974);
     color:transparent;
     background-clip:text;
@@ -392,7 +403,7 @@ footer p{
 
 .quote04 p{
     font-weight:700;
-    background-image: linear-gradient(#C18166,#E4C8A3,#26B1D0,#29618E,#242F4D);
+    background-image: linear-gradient(#9aecff,#26B1D0,#29618E,#242F4D);
     color:transparent;
     background-clip:text;
 }
