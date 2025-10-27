@@ -79,11 +79,20 @@ h1 {
     font-size: 5rem;
     text-align: center;
     font-weight:750;
-    font-style: italic;
-    color: white;
-	padding-block: 2rem;
+	text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    /* font-style: italic; */
+    /* color: white; */
 	margin-inline: auto;
     mix-blend-mode:overlay;
+	/* color: transparent; */
+	/* -webkit-text-stroke: 2px white; */
+	
+	/* text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white; */
 
 
 	@media (width > 800px) {
@@ -104,10 +113,17 @@ h1 {
 }
 #project-title{
     color: #ffffff;
-    padding: 10px;
-    line-height: 115%;
-    
+	padding-block-start: 6rem;
+	font-size: 6rem;
 }
+
+/* #project-subtitle{
+    color: #ffffff;
+	padding-inline: 4rem;
+    line-height: 1.5rem;
+	font-size: 1.5rem;
+	padding-block-start: 2rem;
+} */
 
 main {
     /* background-color: aqua; */
@@ -141,21 +157,26 @@ article {
 h2 {
     /* display:; */
 	font-weight: lighter;
-    text-align: center;
-    justify-self: center;
+    /* justify-self: center; */
     font-weight: 600;
     line-height: 105%;
     width:90%;
 	padding-block: 3rem 1.5rem;
+	padding-inline-start: 2rem;
 
 	@media (width > 800px) {
-	font-size: 2rem;
+	font-size: 3rem;
+	text-wrap: pretty;
+	text-align: left;
 	}
 }
 
 h3 {
 	/* text-align: center; */
 	font-size: 1rem;
+	text-align: left;
+	font-style: italic;
+	padding-inline-start: 2rem;
 	/* margin-block-start: 1rem; */
 	/* padding-inline-end: 0rem; */
 	/* padding-inline-start: 7rem;
@@ -167,7 +188,9 @@ h3 {
 
 #author {
 	margin-block: 1rem 0;
-	margin-block-end: 7rem;
+	margin-block-end: 2rem;
+	text-align: left;
+	padding-inline-start: 2rem;
 }
 
 p {
@@ -233,6 +256,7 @@ footer p{
 .nav-links{
     display:flex;
     gap: 1rem;
+	align-items: center;
 }
 
 .cite-group{
@@ -307,6 +331,7 @@ footer p{
 .empty {
 	opacity: 0;
 }
+
 .gradient{
     position:sticky;
     /* background: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
