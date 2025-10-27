@@ -259,20 +259,67 @@ footer p{
 	}
 }
 
+.sec-title {
+	font-weight: bold;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-wrap: ;
+}
+
 .empty {
 	opacity: 0;
 }
 .gradient{
     position:sticky;
     background: linear-gradient(to bottom, #FF5802, #AF184D,#252475);
-    min-height: 50%;
-    
+    min-height: 10rem;
     top:0;
+
+	p {
+ 		text-align:center;
+		color: white;
+		font-size: 5rem;
+	}
     
 }
-.gradient p{
-    text-align:center;
-   
+
+.gradient-02 {
+	background: linear-gradient(to bottom, #256E81,#010D28);
+	position:sticky;
+    min-height: 10rem;
+    top:0;
+
+	p {
+		text-align: center;
+		color: white;
+		font-size: 5rem;
+	}
+}
+
+.gradient-03 {
+	background: linear-gradient(to bottom, #DF291E,#FC6337,#FC7641,#9F5D6E,#404974);
+	position:sticky;
+    min-height: 10rem;
+    top:0;
+
+	p {
+		text-align: center;
+		color: white;
+		font-size: 5rem;
+	}
+}
+
+.gradient-04 {
+	background: linear-gradient(to bottom, #C18166,#E4C8A3,#26B1D0,#29618E,#242F4D);
+	position:sticky;
+    min-height: 10rem;
+    top:0;
+
+	p {
+		text-align: center;
+		color: white;
+		font-size: 5rem;
+	}
 }
 
 .citation{
@@ -290,6 +337,10 @@ footer p{
     order:2;
     @media (width > 800px) {
 	order:2;
+	}
+
+	p {
+		margin-block-end: 1rem;
 	}
 }
 
