@@ -54,9 +54,14 @@ header{
     /* position:relative; */
     /* z-index:1; */
 	color: whitesmoke;
+
 		/* background: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
 	min-height:100vh;
     
+}
+
+#names{
+    font-size:1rem;
 }
 
 body {
@@ -175,8 +180,8 @@ h3 {
 	/* text-align: center; */
 	font-size: 1rem;
 	text-align: left;
-	font-style: italic;
-	padding-inline-start: 2rem;
+	/* font-style: italic; */
+	/* padding-inline-start: 2rem; */
 	/* margin-block-start: 1rem; */
 	/* padding-inline-end: 0rem; */
 	/* padding-inline-start: 7rem;
@@ -448,13 +453,6 @@ footer p{
 	}
 }
 
-.cite {
-	font-size: .75rem;
-	font-style: italic;
-	padding-block-end: 2rem;
-	padding-inline-start: 2rem;
-}
-
 .cite-quote{
     font-size: 1rem;
 	font-weight: bold;
@@ -469,15 +467,24 @@ footer p{
 	
 }
 
+.cite{
+    font-style: italic;
+    line-height: 1rem;
+    font-size: .75rem;
+    font-weight: 250;
+    /* margin-block-end: 5rem; */
+}
+
 .quote03 p{
-	font-size: 1.65rem;
-	line-height: 2rem;
+	font-size: 1.5rem;
+	line-height: 1.4rem;
     font-weight:700;
-	padding-inline-start: 2rem;
-	padding-block-start: 2rem;
+	/* padding-inline-start: 2rem; */
     background-image: linear-gradient(#DF291E,#FC6337,#FC7641,#9F5D6E,#404974);
     color:transparent;
     background-clip:text;
+    text-align:justify;
+    /* fix text align */
 
 }
 
