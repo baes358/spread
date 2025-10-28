@@ -173,7 +173,7 @@ h2 {
     line-height: 105%;
     width:90%;
 	padding-block: 3rem 1.5rem;
-	padding-inline-start: 2rem;
+	
 
 	@media (width > 800px) {
 	font-size: 3rem;
@@ -186,7 +186,7 @@ h3 {
 	/* text-align: center; */
 	font-size: 1rem;
 	text-align: left;
-    padding-inline-start: 2rem;
+    
 	/* font-style: italic; */
 	/* padding-inline-start: 2rem; */
 	/* margin-block-start: 1rem; */
@@ -198,11 +198,38 @@ h3 {
 	/* padding-inline-end: 15rem; */
 	}
 
+.title h2{
+    font-size: 2rem;
+
+    @media (width > 800px) {
+	font-size: 3rem;
+	text-wrap: pretty;
+	text-align: left;
+	}
+}
+.title h3{
+    font-size: 1rem;
+    line-height:1.75rem;
+
+    @media (width > 800px) {
+	font-size: 1.5rem;
+	text-wrap: pretty;
+	text-align: left;
+	}
+}
+
 #author {
 	margin-block: 1rem 0;
 	margin-block-end: 2rem;
 	text-align: left;
-	padding-inline-start: 2rem;
+	
+    font-size: .75rem;
+
+    @media (width > 800px) {
+	font-size: 1rem;
+	text-wrap: pretty;
+	text-align: left;
+	}
 }
 
 p {
@@ -316,9 +343,9 @@ footer{
     width:100%;
     min-height:max-content;
 
-    background: linear-gradient(to top,#ffffffc5 0%, #FFFFFFE6 50%, #ffffff 100%, #FFFFFFFF 100%);    
+    background: linear-gradient(to top,#f7f7f7 0%, #f7f7f7 50%, #f7f7f7 100%, #f7f7f7 100%);    
     backdrop-filter: blur(5px);
-    mask: linear-gradient(to bottom, white, white, white, white, transparent);
+    mask: linear-gradient(to bottom, #f7f7f7, #f7f7f7, #f7f7f7, #f7f7f7, transparent);
     /* backdrop-filter: blur(100px); */
 
     h3{
