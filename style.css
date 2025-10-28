@@ -65,6 +65,7 @@ header{
 }
 
 body {
+    background: var(--color-wh);
     max-height: 150vh;
 	font-size: .85rem;
 	/* padding-inline: 3rem; */
@@ -117,7 +118,7 @@ h1 {
     align-content: center;
 }
 #project-title{
-    color: #ffffff;
+    color: var(--color-wh);
 	padding-block-start: 6rem;
 	font-size: 4rem;
 
@@ -220,7 +221,7 @@ p {
 	padding-inline: 1rem;
     z-index:0;
     height:1rem;
-    background: linear-gradient(to bottom, #AF184D,#252475, #FF5802, #ffffff);
+    background: linear-gradient(to bottom, #AF184D,#252475, #FF5802, #f7f7f7);
 
 }
 .art-container{
@@ -239,7 +240,7 @@ p {
 
 footer{
 	min-height: 100vh;
-    background: linear-gradient(to top, #AF184D,#252475, #FF5802, #ffffff);
+    background: linear-gradient(to top, #AF184D,#252475, #FF5802, #f7f7f7);
     justify-content: flex-end;
     position:relative;
 
