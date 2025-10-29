@@ -1,21 +1,10 @@
 @font-face {
-  font-family: "Instrument Sans";
-  src: url("./fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format('truetype');
+  font-family: "Tapestry";
+  src: url("./fonts/Tapestry-Regular.ttf") format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
-@font-face {
-  font-family: "Instrument Italic";
-  src: url("./fonts/InstrumentSans-Italic-VariableFont_wdth,wght.ttf") format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Meie Script";
-  src: url("./fonts/MeieScript-Regular.ttf") format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
-}
+
 
 @font-face {
   font-family: "Figtree";
@@ -81,12 +70,12 @@ main {
 }
 
 h1 {
-	font-family: 'Figtree', sans-serif;
+	font-family: 'Tapestry';
     font-size: 5rem;
     text-align: center;
-    font-weight:750;
-	text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    font-weight:800;
+	/* text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; */
     /* font-style: italic; */
     /* color: white; */
 	margin-inline: auto;
@@ -493,6 +482,30 @@ footer{
 	p {
 		margin-block-end: 1rem;
 	}
+    a {
+        color:#FF5802;
+        padding:2.5px;
+    }
+    .link01:hover{
+        background:linear-gradient(to bottom, #256E81,#010D28);
+        color: var(--color-wh);
+        border-radius:5px;
+    }
+    .link02:hover{
+        background:linear-gradient(to bottom, #F4836D, #D66195, #953D7A, #652D66, #301A4B);
+        color: var(--color-wh);
+        border-radius:5px;
+    }
+    .link03:hover{
+        background:linear-gradient(to bottom,#FC6337,#FC7641,#9F5D6E,#404974);
+        color: var(--color-wh);
+        border-radius:5px;
+    }
+    .link04:hover{
+        background:linear-gradient(to bottom,#26B1D0,#29618E,#242F4D);
+        color: var(--color-wh);
+        border-radius:5px;
+    }
 
     @media (width > 800px) {
 	
