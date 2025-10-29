@@ -52,19 +52,23 @@
 		color: black;
 		align-content: center;
 	}
-
+	
 	/* So much trial and error and so frustrating, referenced class material https://typography-interaction-2526.github.io/topic/responsive/#other-media-features */
 	.project-title {
 		color: black;
+	}
+
+	.project-sub {
+		line-height: .5rem;
 	}
 
 	.footer-text {
 		display: none !important;
 	}
 
-	/* h2 {
-		margin-block-end: 3rem;
-	} */
+	footer {
+		display: none !important;
+	}
 
 	.quote03 {
 		page-break-inside: avoid;
@@ -117,7 +121,8 @@
 
 	/* quote is too close to H4 Meaning and Mood */
 	#special-print-head02 { 
-		padding-block-start: 3.6rem;
+		break-before: page;
+		/* padding-block-start: 3.6rem; */
 	}
     
 
