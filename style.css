@@ -109,27 +109,31 @@ h1 {
 	text-align: center;
 	
 	#project-sub {
-		max-width: 90vw;
+		/* max-width: 90vw; */
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		line-height: 1.5rem;
 		font-family: "Figtree";
 		font-weight: 500;
-		display: inline-block;
+		padding-block-start: 1.5rem;
+        padding-inline:auto;
+
 
 		@media (width > 800px) {
-			font-size: 2rem;
+			font-size: 1.5rem;
+            padding-block-start: 1rem;
 			padding-block-end: 2rem;
-			line-height: 2.5rem;
+			line-height: 1.75rem;
 
 		}
 	}
 }
 #project-title{
     color: var(--color-wh);
-	padding-block-start: 6rem;
-	font-size: 7rem;
-	padding-block-end: .3rem;
+	/* padding-block-start: 6rem; */
+	font-size: 6rem;
+	padding-block-end: 0;
+    
 	
 
     @media (width > 1380px) {
@@ -137,10 +141,10 @@ h1 {
 	padding-block-end: 3rem;
 	}
 
-	@media (width < 1000px) {
+	/* @media (width < 1000px) {
 	font-size: 4rem;
 	padding-block-end: 3rem;
-	}
+	} */
 	
 
 }
@@ -271,6 +275,7 @@ p {
     background: linear-gradient(to bottom, #AF184D,#4b2475, #FF5802, #f7f7f7);
 	background-size: 500% 500%;
 	animation: blend 10s ease infinite;
+    text-align:center;
 
 }
 
