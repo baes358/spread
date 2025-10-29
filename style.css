@@ -499,6 +499,10 @@ footer{
 	}
 }
 
+.cite-text a{
+    text-decoration: underline;
+}
+
 .cite-quote{
     font-size: 1rem;
 	font-weight: bold;
