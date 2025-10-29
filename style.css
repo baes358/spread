@@ -45,7 +45,7 @@ header{
 	color: var(--color-wh);
 
 		/* background: linear-gradient(to bottom, #FF5802, #AF184D,#252475); */
-	min-height:100vh;
+	min-height: 100vh;
     
 }
 
@@ -79,7 +79,7 @@ h1 {
     /* font-style: italic; */
     /* color: white; */
 	margin-inline: auto;
-    mix-blend-mode:overlay;
+    /* mix-blend-mode:overlay; */
 	/* color: transparent; */
 	/* -webkit-text-stroke: 2px white; */
 	
@@ -105,15 +105,43 @@ h1 {
     height: 50rem;
     width:50rem; */
     align-content: center;
+	max-width: 75vw;
+	text-align: center;
+	
+	#project-sub {
+		max-width: 90vw;
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		font-family: "Figtree";
+		font-weight: 500;
+		display: inline-block;
+
+		@media (width > 800px) {
+			font-size: 2rem;
+			padding-block-end: 2rem;
+			line-height: 2.5rem;
+
+		}
+	}
 }
 #project-title{
     color: var(--color-wh);
 	padding-block-start: 6rem;
-	font-size: 4rem;
+	font-size: 7rem;
+	padding-block-end: .3rem;
+	
 
-    @media (width > 800px) {
-	font-size: 6rem;
+    @media (width > 1380px) {
+	font-size: 10rem;
+	padding-block-end: 3rem;
 	}
+
+	@media (width < 1000px) {
+	font-size: 4rem;
+	padding-block-end: 3rem;
+	}
+	
 
 }
 
@@ -157,6 +185,7 @@ article {
 h2 {
     /* display:; */
 	font-weight: bold;
+	font-size: 2rem;
     /* justify-self: center; */
     line-height: 105%;
 	text-align: left;
@@ -165,7 +194,7 @@ h2 {
 	
 
 	@media (width > 800px) {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-wrap: pretty;
 	text-align: left;
 	}
@@ -187,7 +216,7 @@ h3 {
 	/* padding-inline-end: 15rem; */
 	}
 
-.title h2{
+/* .title-circle h2{
     font-size: 2rem;
 
     @media (width > 800px) {
@@ -195,8 +224,8 @@ h3 {
 	text-wrap: pretty;
 	text-align: left;
 	}
-}
-.title h3{
+} */
+.title-circle h3{
     font-size: 1rem;
     line-height:1.75rem;
 
@@ -209,14 +238,14 @@ h3 {
 
 #author {
 	margin-block: 1rem 0;
-	text-align: left;
+	text-align: center;
 	
     font-size: .75rem;
 
     @media (width > 800px) {
 	font-size: 1rem;
 	text-wrap: pretty;
-	text-align: left;
+	text-align: center;
 	}
 }
 
@@ -226,6 +255,9 @@ p {
 
 #project-title{
     margin-block-start:3rem;
+	line-height: 5rem;
+	color: white;
+
 }
 
 .site-header{
@@ -235,13 +267,31 @@ p {
 	padding-block-start:1rem;
 	padding-inline: 1rem;
     z-index:0;
-    height:1rem;
-    background: linear-gradient(to bottom, #AF184D,#252475, #FF5802, #f7f7f7);
+    /* height: 75%; */
+    background: linear-gradient(to bottom, #AF184D,#4b2475, #FF5802, #f7f7f7);
+	background-size: 500% 500%;
+	animation: blend 10s ease infinite;
 
 }
+
+/* Animation link https://codepen.io/P1N2O/pen/pyBNzX */
+
+@keyframes blend {
+	0% {
+		background-position: 0% 25%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 25%;
+	}
+} 
+
 .art-container{
 	bottom: 30vh;
-	padding-block-end: 40rem;
     /* padding-inline: 100px; */
 
 }
@@ -550,10 +600,11 @@ footer{
 
 	font-size: 1.3rem;
 	line-height: 1.6rem;
-	font-weight:700;
+	font-weight: 500;
 	/* padding-inline-start: 2rem; */
-	background-image: linear-gradient(#DF291E,#404974);
-	color:transparent;
+	/* background-image: linear-gradient(#DF291E,#404974); */
+	/* color:transparent; */
+	color: var(--color-bl);
 	background-clip:text;
 	text-align: left;
 	/* fix text align */
@@ -571,9 +622,10 @@ footer{
 .quote04 blockquote{
     font-size: 1.3rem;
 	line-height: 1.6rem;
-    font-weight:700;
-    background-image: linear-gradient(#3577ac,#242F4D);
-    color:transparent;
+    font-weight: 500;
+    /* background-image: linear-gradient(#3577ac,#242F4D);
+    color:transparent; */
+	color: var(--color-bl);
     background-clip:text;
 }
 
@@ -581,3 +633,5 @@ footer{
 	margin-block-end: 3rem;
 	padding-inline-end: 2rem;
 }
+
+
