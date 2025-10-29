@@ -34,7 +34,8 @@
     @page {
     	margin: 1in; 
   	}
-
+    
+    
 	:root{
         --color-bl:#222222;
         --color-wh:#f7f7f7;
@@ -61,12 +62,13 @@
 		display: none !important;
 	}
 
-	h2 {
-		margin-block-end: 5rem;
-	}
+	/* h2 {
+		margin-block-end: 3rem;
+	} */
 
 	.quote03 {
 		page-break-inside: avoid;
+        margin-block-end:0;
 	}
 
 	.quote03 blockquote {
@@ -80,21 +82,32 @@
 		line-height: 1rem !important;
 		page-break-inside: avoid;
 	}
+    .time{
+        display: none !important;
+    }
+    .cite-group{
+        margin-block:0;
+    }
+    .grad-container{
+        display: none !important;
+    }
 
-	.title-text {
+	/* .title-text {
 		margin-block-start: -6rem;
-	}
+	} */
 	
-	h4 {
+	/* h4 {
 		padding-block-end: -4rem;
-	}
+	} */
 
-	.cite-text {
+	/* .cite-text {
 		margin-block-end: -3rem;
-	}
-
+	} */
+    #title02{
+        margin-block-start:1rem;
+    }
 	#special-print-par {
-		margin-block-end: 3rem;
+		margin-block-end: 1rem;
 	}
 
 	/* Title is overlaping text above and this seems to push it down without effecting everything  */
@@ -104,8 +117,9 @@
 
 	/* quote is too close to H4 Meaning and Mood */
 	#special-print-head02 { 
-		margin-block-start: 1rem;
+		padding-block-start: 3.6rem;
 	}
+    
 
 }
 
@@ -378,6 +392,7 @@ footer{
  }
 
 .sec-title {
+    z-index:0;
 	position:sticky;
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -391,7 +406,7 @@ footer{
     backdrop-filter: blur(5px);
     mask: linear-gradient(to bottom, #f7f7f7, #f7f7f7, #f7f7f7, #f7f7f7, transparent);
 
-    h3{
+    h4{
         font-size: 1.5rem;
     }
 
@@ -416,8 +431,17 @@ footer{
 .empty {
 	opacity: 0;
 }
-
+.grad-container{
+    
+    position:sticky;
+    min-height: 5em;
+    min-width: 15em;
+     top:0;
+     display:flex;
+     flex-direction: column;
+}
 .gradient{
+    z-index:2;
 	position:sticky;
     min-height: 5em;
     min-width: 15em;
@@ -425,7 +449,7 @@ footer{
     top:0;
     font-weight: 600;
     letter-spacing: -7px;
-    margin-block-end: 3rem;
+    /* margin-block-end: 3rem; */
 	background-color: white;
 
 	p {
@@ -454,17 +478,28 @@ footer{
 		font-size: 3rem;
 	} */
 
-	.time {
-	color: black;
-	font-size: 0.6rem;
-	letter-spacing: 0.03rem;
-	text-align: left;
-	padding-block-start: 1rem;
-	}
+	
 
     @media (width > 800px) {
     min-height: 10rem;
 	}
+}
+
+.time {
+    z-index:2;
+	color: black;
+    background:var(--color-wh);
+    position:sticky;
+    min-height: 5em;
+    min-width: 15em;
+     top:50;
+    padding-block:.75rem 0;
+    /* background-color: var(--color-wh); */
+	font-size: 0.6rem;
+	letter-spacing: 0.03rem;
+	text-align: left;
+	/* padding-block-start: 1rem; */
+    /* margin-block-start: 1rem; */
 }
 
 #g02 {
