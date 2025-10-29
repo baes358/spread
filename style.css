@@ -167,10 +167,10 @@ article {
 
 h2 {
     /* display:; */
-	font-weight: lighter;
+	font-weight: bold;
     /* justify-self: center; */
-    font-weight: 600;
     line-height: 105%;
+	text-align: left;
     width:90%;
 	padding-block: 3rem 1.5rem;
 	
@@ -220,7 +220,6 @@ h3 {
 
 #author {
 	margin-block: 1rem 0;
-	margin-block-end: 2rem;
 	text-align: left;
 	
     font-size: .75rem;
@@ -395,11 +394,16 @@ footer{
 		color: var(--color-wh);
 		font-size: 5rem;
         line-height:10rem;
-
-    
+		margin-block-start: 0;
 	}
     
 }
+
+/* .caption {
+		color: var(--color-bl);
+		font-size: 1rem;
+		position:sticky;
+} */
 #g01{
     background: linear-gradient(to bottom, #256E81,#010D28);
     position:sticky;
@@ -412,6 +416,8 @@ footer{
 		color: var(--color-wh);
 		font-size: 5rem;
 	}
+
+	
 
     @media (width > 800px) {
         min-height: 10rem;
@@ -517,22 +523,22 @@ footer{
 
 .quote03 p{
 	font-size: 1.5rem;
-	line-height: 1.5rem;
+	line-height: 1.6rem;
     font-weight:700;
 	/* padding-inline-start: 2rem; */
     background-image: linear-gradient(#DF291E,#FC6337,#FC7641,#9F5D6E,#404974);
     color:transparent;
     background-clip:text;
-    text-align:justify;
+    text-align: left;
     /* fix text align */
 
 }
 
 .quote04 p{
     font-size: 1.5rem;
-	line-height: 1.4rem;
+	line-height: 1.6rem;
     font-weight:700;
-    background-image: linear-gradient(#9aecff,#26B1D0,#29618E,#242F4D);
+    background-image: linear-gradient(#26B1D0,#29618E,#242F4D);
     color:transparent;
     background-clip:text;
 }
