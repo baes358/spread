@@ -151,6 +151,7 @@ h1 {
 
 .title-circle{
     margin-inline:auto;
+
     align-content: center;
 	max-width: 75vw;
 	text-align: center;
@@ -192,16 +193,24 @@ h1 {
 
 	#project-title{
 		color: var(--color-wh);
-		margin-block-start: 7rem;
+		margin-block-start: 13rem;
 		font-size: 2rem;
 		padding-block-end: 0.5rem;
 		font-weight: 200;
 		letter-spacing: 0.2rem;
 
+        @media (width < 600px) {
+		font-size: 2rem;
+        margin-block-start: 16rem;
+		letter-spacing: 0.2rem;
+		/* padding-block-start: 1rem; */
+		font-weight: 200;
+		}
+
 		@media (width > 600px) {
 		font-size: 2rem;
 		letter-spacing: 0.2rem;
-		padding-block-start: 1rem;
+		/* padding-block-start: 1rem; */
 		font-weight: 200;
 		}
 
@@ -221,11 +230,26 @@ h1 {
 		}
 }
 
+    .authors{
+        margin-block-start: 5rem;
+
+        @media (width < 600px) {
+		font-size: 2rem;
+        margin-block-start: 16rem;
+		/* padding-block-start: 1rem; */
+		font-weight: 200;
+		}
+    }
 	#author {
 		margin-block-start: 10rem;
+        
 		text-align: center;
 		font-size: .75rem;
 		font-weight: 300;
+
+        @media (width < 600px){
+            margin-block-end:.5rem;
+        }
 	}
 
 	.names {
@@ -233,9 +257,14 @@ h1 {
 		font-weight: 300;
 	}
 	#names {
+        
     	font-size: .75rem;
 		font-weight: 300;
 		text-decoration: underline;
+
+        @media (width < 600px) {
+            margin-block-start:.5rem;
+        }
 	}
 
 	.art-link {
