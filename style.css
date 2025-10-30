@@ -53,11 +53,11 @@
 	}
 	
 	/* So much trial and error and so frustrating, referenced class material https://typography-interaction-2526.github.io/topic/responsive/#other-media-features */
-	.project-title {
+	#project-title {
 		color: black;
 	}
 
-	.project-sub {
+	#project-sub {
 		line-height: .5rem;
 	}
 
@@ -119,9 +119,12 @@ header{
 	color: var(--color-wh);
 	height: 100vh;
     
-    display:grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr;
+    display:flex;
+    flex-direction: column;
+        justify-content: space-between;
+
+    /* grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr; */
     /* justify-content: flex-start; */
     text-align:center;
     margin-block:auto;
@@ -129,7 +132,6 @@ header{
 	padding-block-start:1rem;
 	padding-inline: 1rem;
     z-index:0;
-    justify-content: flex-start;
     background: linear-gradient(to bottom, #AF184D,#4b2475, #FF5802, #f7f7f7);
 	background-size: 500% 500%;
 	animation: blend 10s ease infinite;
@@ -170,9 +172,10 @@ h1 {
     margin-inline:auto;
     height:100vh;
     max-width:100vw;
+    position:relative;
 
     justify-content: space-between;
-    align-content: center;
+    /* align-content: center; */
 	/* max-width: 75vw; */
 	text-align: center;
 
@@ -213,15 +216,17 @@ h1 {
 
 	#project-title{
 		color: var(--color-wh);
-		margin-block-start: 10rem;
+		margin-block-start: 35vh;
 		font-size: 2rem;
 		padding-block-end: 0.5rem;
 		font-weight: 200;
 		letter-spacing: 0.2rem;
+            align-content: center;
+
 
         @media (width < 600px) {
 		font-size: 2rem;
-        margin-block-start: 16rem;
+        margin-block-start: 35vh;
 		letter-spacing: 0.2rem;
 		/* padding-block-start: 1rem; */
 		font-weight: 200;
@@ -244,14 +249,18 @@ h1 {
 		@media (width > 1300px) {
 		font-size: 5rem;
 		letter-spacing: 0.2rem;
-		margin-block-start: 7rem;
+		margin-block-start: 30vh;
 		padding-block-end: 3rem;
 		font-weight: 200;
 		}
 }
 
     .authors{
-        margin-block-start: 7rem;
+        margin-block-start: auto;
+        margin-inline:auto;
+        position:absolute;
+        justify-self:center;
+        top:80vh;
 
         @media (width < 600px) {
 		font-size: 2rem;
@@ -294,8 +303,11 @@ h1 {
     	font-size: .75rem;
 		font-weight: 300;
 		text-decoration: underline;
+        place-content: center;
         /* text-decoration-style:dotted; */
-
+        @media (width < 600px) {
+            margin-block-start:0rem;
+        }
 	}
 
 }
