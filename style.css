@@ -132,6 +132,11 @@ header{
 	color: var(--color-wh);
 	min-height: 100vh;
 }
+.course{
+    letter-spacing:.25rem;
+    font-weight: 500;
+    font-size: .75rem;
+}
 
 body {
     background: var(--color-wh);
@@ -266,6 +271,7 @@ h1 {
     	font-size: .75rem;
 		font-weight: 300;
 		text-decoration: underline;
+        /* text-decoration-style:dotted; */
 
         @media (width < 600px) {
             margin-block-start:.5rem;
@@ -276,6 +282,8 @@ h1 {
     	font-size: .75rem;
 		font-weight: 300;
 		text-decoration: underline;
+        /* text-decoration-style:dotted; */
+
 	}
 
 }
@@ -286,7 +294,7 @@ main {
 
 article {
     padding-block-end: 7rem;
-    padding-inline: 1rem;
+    padding-inline: 3rem;
     text-wrap: pretty;
     bottom: 30vh;
 	top:40vh;
@@ -370,23 +378,58 @@ p {
 
 footer{
 	min-height: 100vh;
-    background: linear-gradient(to top, #AF184D,#252475, #FF5802, #f7f7f7);
+    /* background: linear-gradient(to top, #AF184D,#252475, #FF5802, #f7f7f7); */
     justify-content: flex-end;
     position:relative;
+    background: linear-gradient(to top, #AF184D,#4b2475, #FF5802, #f7f7f7);
+	background-size: 500% 500%;
+	animation: blend 10s ease infinite;
 }
+
 
 .footer-text{
 	display:flex;
-	justify-content: center;
+    flex-direction: column;
+    text-align:center;
+	/* justify-content: center; */
 	width: 100vw;
+    height: 100vh;
 	padding-inline: 1rem;
-	padding-block-start:1rem;
+	padding-block-start:1.5rem;
 	padding-block-end:1rem;
     position:absolute;
 	z-index:0;
-	margin-block-start: 20rem;
-	color: var(--color-wh);
+    /* padding-block-start: 2rem; */
+    color: var(--color-wh);
 	bottom:0;
+}
+footer p{
+    text-align: center;
+		font-size: .75rem;
+		font-weight: 300;
+        
+
+        @media (width < 600px){
+            margin-block-end:.5rem;
+        }
+}
+#p2{
+    letter-spacing:.25rem;
+    		font-weight: 500;
+
+}
+.msg{
+    font-family: 'Kristi';
+	letter-spacing: 0.25rem;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight:500;
+    top:0;
+    margin-block:auto;
+    margin-inline: auto;
+    @media (width > 800px){
+        font-size: 3rem;
+        }
 }
 
 .nav-list{
@@ -479,7 +522,7 @@ footer{
 	position:sticky;
     min-height: 5em;
     min-width: 15em;
-    border-radius:2%;
+    border-radius:5px;
     top:0;
     font-weight: 600;
     letter-spacing: -7px;
@@ -492,6 +535,7 @@ footer{
 		color: var(--color-wh);
 		font-size: 3rem;
         line-height: 5rem;
+        letter-spacing: .01rem;
 
 	@media (width > 800px) {
     line-height: 10rem;
@@ -527,9 +571,9 @@ footer{
     min-height: 5em;
     min-width: 15em;
      top:50;
-    padding-block:.75rem 0;
+    padding-block:.5rem 0;
     /* background-color: var(--color-wh); */
-	font-size: 0.6rem;
+	font-size: 0.75rem;
 	letter-spacing: 0.03rem;
 	text-align: left;
 	/* padding-block-start: 1rem; */
@@ -644,6 +688,7 @@ footer{
 
 .cite-text a{
     text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 /* .cite-quote{
