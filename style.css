@@ -118,7 +118,6 @@
 }
 
 header{
-    
 	min-height: 100vh;
     justify-content: space-between;
     position:relative;
@@ -134,10 +133,6 @@ header{
     font-size: .65rem;
     margin-block-start:0;
 }
-
-/* .art-name{
-    margin-block:auto;
-} */
 
 body {
     background: var(--color-wh);
@@ -164,7 +159,6 @@ h1 {
     display:flex;
     flex-direction: column;
     text-align:center;
-	/* justify-content: center; */
 	width: 100vw;
     height: 100vh;
 	padding-inline: 1rem;
@@ -172,145 +166,111 @@ h1 {
 	padding-block-end:1rem;
     position:absolute;
 	z-index:0;
-    /* padding-block-start: 2rem; */
     color: var(--color-wh);
 	bottom:0;
-    
-    /* margin-inline:auto;
-    height:100vh;
-    max-width:100vw;
-    position:relative;
-	display: flex;
-	flex-direction: column;
-
-    justify-content: space-between; */
-    /* align-content: center; */
-	/* max-width: 75vw; */
-	/* text-align: center; */
-
-	
 }
+
 #project-sub {
-		/* max-width: 90vw; */
-		text-align: center;
-		font-size: 1rem;
-		line-height: 1.25rem;
-		font-family: "Figtree";
-		font-weight: 300;
-		padding-block-start: 1rem;
-        padding-inline:auto;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	font-family: "Figtree";
+	font-weight: 300;
+	padding-block-start: 1rem;
+	padding-inline:auto;
 
-		@media (width > 600px) {
-		font-size: 1rem;
-		padding-block-start: 1rem;
-		line-height: 1.25rem;
-		text-wrap: balance;
-		font-weight: 300;
-		}
-
-		@media (width > 800px) {
-		font-size: 1.5rem;
-		padding-block-start: 1rem;
-		line-height: 2rem;
-		text-wrap: balance;
-		font-weight: 300;
-		}
+	@media (width > 600px) {
+	font-size: 1rem;
+	padding-block-start: 1rem;
+	line-height: 1.25rem;
+	text-wrap: balance;
+	font-weight: 300;
 	}
 
-	#project-title{
-		color: var(--color-wh);
-		/* margin-block-start: 35vh; */
-		font-size: 2rem;
-		padding-block-end: .5rem;
-		font-weight: 200;
-		letter-spacing: 0.2rem;
-        align-content: center;
-		margin-block-start: 25%;
-
-
-        @media (width < 600px) {
-		font-size: 2rem;
-        /* margin-block-start: 35vh; */
-		letter-spacing: 0.2rem;
-		/* padding-block-start: 1rem; */
-		font-weight: 200;
-		}
-
-		@media (width > 600px) {
-		font-size: 2rem;
-		letter-spacing: 0.2rem;
-		/* padding-block-start: 1rem; */
-		font-weight: 200;
-		}
-
-		@media (width > 800px) {
-		font-size: 3rem;
-		letter-spacing: 0.2rem;
-		padding-block-end: 0.5rem;
-		font-weight: 200;
-		}
-
-		@media (width > 1300px) {
-		font-size: 5rem;
-		letter-spacing: 0.2rem;
-		/* margin-block-start: 30vh; */
-		padding-block-end: 3rem;
-		font-weight: 200;
-		}
+	@media (width > 800px) {
+	font-size: 1.5rem;
+	padding-block-start: 1rem;
+	line-height: 2rem;
+	text-wrap: balance;
+	font-weight: 300;
+	}
 }
 
-    .authors{
-        /* margin-block-start: auto; */
-        margin-inline:auto;
-		/* padding-block-start: 8rem; */
-        /* position:absolute; */
-        /* justify-self:center; */
-        /* top:90%; */
-       
-        align-content:end;
+#project-title{
 
-		padding-block-end: 10rem;
-		width: 100%;
-		
-		@media (width > 600px) {
-		margin-block-start: 20%;
-		}
+	color: var(--color-wh);
+	font-size: 2rem;
+	padding-block-end: .5rem;
+	font-weight: 200;
+	letter-spacing: 0.2rem;
+	align-content: center;
+	margin-block-start: 25%;
 
-        @media (width < 600px) {
-		font-size: 2rem;
-        margin-inline:auto;
-		align-content:center;
-		margin-block-start: 20%;
-		}
-    }
-	#author {
-		/* margin-block-start: 10rem; */
-        
-		text-align: center;
-		font-size: .75rem;
-		font-weight: 300;
-
-        @media (width < 600px){
-            /* margin-block-end:.5rem; */
-        }
+	@media (width < 600px) {
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	font-weight: 200;
 	}
 
-	.names {
-		font-size: .75rem;
-		font-weight: 300;
+	@media (width > 600px) {
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	font-weight: 200;
 	}
-	#names {
-        
-    	font-size: .75rem;
-		font-weight: 300;
-		text-decoration: underline;
-        /* text-decoration-style:dotted; */
-        margin-block-end:2rem;
 
+	@media (width > 800px) {
+	font-size: 3rem;
+	letter-spacing: 0.2rem;
+	padding-block-end: 0.5rem;
+	font-weight: 200;
+	}
 
-        @media (width < 600px) {
-            margin-block-start:.5rem;
-        }
+	@media (width > 1300px) {
+	font-size: 5rem;
+	letter-spacing: 0.2rem;
+	padding-block-end: 3rem;
+	font-weight: 200;
+	}
+}
+
+.authors{
+	margin-inline:auto;    
+	align-content:end;
+	padding-block-end: 10rem;
+	width: 100%;
+	
+	@media (width > 600px) {
+	margin-block-start: 20%;
+	}
+
+	@media (width < 600px) {
+	font-size: 2rem;
+	margin-inline:auto;
+	align-content:center;
+	margin-block-start: 20%;
+	}
+}
+
+#author {
+	text-align: center;
+	font-size: .75rem;
+	font-weight: 300;
+}
+
+.names {
+	font-size: .75rem;
+	font-weight: 300;
+}
+
+#names {
+	font-size: .75rem;
+	font-weight: 300;
+	text-decoration: underline;
+	margin-block-end:2rem;
+
+	@media (width < 600px) {
+		margin-block-start:.5rem;
+	}
 	}
 
 	.art-link {
@@ -318,7 +278,6 @@ h1 {
 		font-weight: 300;
 		text-decoration: underline;
         place-content: center;
-        /* text-decoration-style:dotted; */
         
 		@media (width < 600px) {
         margin-block-start:0rem;
@@ -366,6 +325,7 @@ h3 {
 	font-size: 1rem;
 	text-align: left;
 }
+
 .title-sub{
     text-align:center;
     margin-block-start:0;
@@ -389,7 +349,6 @@ p {
 	margin-block-start: calc(2x * var(--spacing));
 }
 
-
 /* Animation link https://codepen.io/P1N2O/pen/pyBNzX */
 @keyframes blend {
 	0% {
@@ -411,7 +370,6 @@ p {
 
 footer{
 	min-height: 100vh;
-    /* background: linear-gradient(to top, #AF184D,#252475, #FF5802, #f7f7f7); */
     justify-content: flex-end;
     position:relative;
     background: linear-gradient(to top, #AF184D,#4b2475, #FF5802, #f7f7f7);
@@ -419,12 +377,10 @@ footer{
 	animation: blend 10s ease infinite;
 }
 
-
 .footer-text{
 	display:flex;
     flex-direction: column;
     text-align:center;
-	/* justify-content: center; */
 	width: 100vw;
     height: 100vh;
 	padding-inline: 1rem;
@@ -432,7 +388,6 @@ footer{
 	padding-block-end:1rem;
     position:absolute;
 	z-index:0;
-    /* padding-block-start: 2rem; */
     color: var(--color-wh);
 	bottom:0;
 }
@@ -441,7 +396,6 @@ footer{
 	display:flex;
     flex-direction: column;
     text-align:center;
-	/* justify-content: center; */
 	width: 100vw;
     height: 100vh;
 	padding-inline: 1rem;
@@ -449,20 +403,18 @@ footer{
 	padding-block-end:1rem;
     position:absolute;
 	z-index:0;
-    /* padding-block-start: 2rem; */
     color: var(--color-wh);
 	bottom:0;
 }
 
 footer p{
     text-align: center;
-		font-size: .75rem;
-		font-weight: 300;
-        
-
-        @media (width < 600px){
-            margin-block-end:.5rem;
-        }
+	font-size: .75rem;
+	font-weight: 300;
+    
+    @media (width < 600px){
+    margin-block-end:.5rem;
+    }
 }
 
 .p2{
@@ -470,6 +422,7 @@ footer p{
     font-weight: 300;
 	font-size: 0.65rem;
 }
+
 #p3{
     margin-block-end:.5rem;
 }
@@ -483,10 +436,12 @@ footer p{
     top:0;
     margin-block:auto;
     margin-inline: auto;
-    @media (width > 800px){
-        font-size: 3rem;
-        }
+    
+	@media (width > 800px){
+    font-size: 3rem;
+    }
 }
+
 .msg-top{
     font-family: 'Kristi';
 	letter-spacing: 0.25rem;
@@ -494,18 +449,19 @@ footer p{
     text-align: center;
     font-weight:500;
     top:0;
-    
     margin-block-start:auto;
     margin-inline: auto;
-    @media (width > 800px){
-        font-size: 3rem;
-        }
+    
+	@media (width > 800px){
+    font-size: 3rem;
+    }
 }
 
 .author1{
     font-size: .75rem;
 	font-weight: 300;  
 }
+
 .author2{
     font-size: .75rem;
 	font-weight: 300;
@@ -518,11 +474,11 @@ footer p{
     font-size: .75rem;
 	font-weight: 300;
     margin-block-end:1rem;
-    a{
+    
+	a{
         text-decoration: underline;
     }
 }
-
 
 .cite-group{
     display:grid;
@@ -589,6 +545,7 @@ footer p{
 .empty {
 	opacity: 0;
 }
+
 .grad-container{
     
     position:sticky;
@@ -598,6 +555,7 @@ footer p{
      display:flex;
      flex-direction: column;
 }
+
 .gradient{
     z-index:2;
 	position:sticky;
@@ -607,7 +565,6 @@ footer p{
     top:0;
     font-weight: 600;
     letter-spacing: -7px;
-    /* margin-block-end: 3rem; */
 	background-color: white;
 
 	p {
