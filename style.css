@@ -264,6 +264,10 @@ h1 {
 
         @media (width < 600px) {
 		font-size: 2rem;
+        justify-self:center;
+        margin-inline:auto;
+
+
         /* margin-block-start: 16rem; */
 		/* padding-block-start: 1rem; */
 		/* font-weight: 200; */
