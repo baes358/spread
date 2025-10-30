@@ -35,7 +35,6 @@
     	margin: 1in; 
   	}
     
-    
 	:root{
         --color-bl:#222222;
         --color-wh:#f7f7f7;
@@ -86,6 +85,7 @@
 		line-height: 1rem !important;
 		page-break-inside: avoid;
 	}
+	
     .time{
         display: none !important;
     }
@@ -96,17 +96,6 @@
         display: none !important;
     }
 
-	/* .title-text {
-		margin-block-start: -6rem;
-	} */
-	
-	/* h4 {
-		padding-block-end: -4rem;
-	} */
-
-	/* .cite-text {
-		margin-block-end: -3rem;
-	} */
     #title02{
         margin-block-start:1rem;
     }
@@ -124,8 +113,6 @@
 		break-before: page;
 		/* padding-block-start: 3.6rem; */
 	}
-    
-
 }
 
 header{
@@ -134,8 +121,8 @@ header{
 }
 .course{
     letter-spacing:.25rem;
-    font-weight: 500;
-    font-size: .75rem;
+    font-weight: 300;
+    font-size: .65rem;
 }
 
 body {
@@ -403,6 +390,7 @@ footer{
     color: var(--color-wh);
 	bottom:0;
 }
+
 footer p{
     text-align: center;
 		font-size: .75rem;
@@ -413,11 +401,13 @@ footer p{
             margin-block-end:.5rem;
         }
 }
+
 #p2{
     letter-spacing:.25rem;
-    		font-weight: 500;
-
+    font-weight: 300;
+	font-size: 0.65rem;
 }
+
 .msg{
     font-family: 'Kristi';
 	letter-spacing: 0.25rem;
@@ -550,14 +540,6 @@ footer p{
     min-height: 5rem;
     top:0;
 
-	/* p {
-		text-align: center;
-		color: var(--color-wh);
-		font-size: 3rem;
-	} */
-
-	
-
     @media (width > 800px) {
     min-height: 10rem;
 	}
@@ -572,12 +554,9 @@ footer p{
     min-width: 15em;
      top:50;
     padding-block:.5rem 0;
-    /* background-color: var(--color-wh); */
 	font-size: 0.75rem;
 	letter-spacing: 0.03rem;
 	text-align: left;
-	/* padding-block-start: 1rem; */
-    /* margin-block-start: 1rem; */
 }
 
 #g02 {
@@ -690,18 +669,6 @@ footer p{
     text-decoration: underline;
     text-decoration-style: dotted;
 }
-
-/* .cite-quote{
-    font-size: 1rem;
-	font-weight: bold;
-	line-height: 1.25rem;
-	padding-inline-start: 10rem;
-    order:1;
-
-    @media (width > 800px) {
-	order:3;
-	}
-} */
 
 .cite{
     font-style: italic;
