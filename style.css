@@ -216,7 +216,8 @@ h1 {
 		padding-block-end: .5rem;
 		font-weight: 200;
 		letter-spacing: 0.2rem;
-            align-content: center;
+        align-content: center;
+		margin-block-start: 25%;
 
 
         @media (width < 600px) {
@@ -256,16 +257,22 @@ h1 {
 		/* padding-block-start: 8rem; */
         /* position:absolute; */
         /* justify-self:center; */
-        top:80vh;
+        top:90%;
         align-content:center;
 		padding-block-end: 10rem;
 		width: 100%;
+		
+		@media (width > 600px) {
+		margin-block-start: 20%;
+		}
 
         @media (width < 600px) {
 		font-size: 2rem;
         /* justify-self:center; */
         margin-inline:auto;
 		align-content:center;
+		margin-block-start: 20%;
+
 		/* padding-block-start: 8rem; */
 
         /* margin-block-start: 16rem; */
