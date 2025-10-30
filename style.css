@@ -259,6 +259,7 @@ h1 {
         top:80vh;
         align-content:center;
 		padding-block-end: 10rem;
+		width: 100%;
 
         @media (width < 600px) {
 		font-size: 2rem;
