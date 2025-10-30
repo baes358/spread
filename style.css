@@ -3,7 +3,6 @@
 @font-face {
     font-family: "Kristi";
   src: url("('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kristi&family=Neonderthaw&family=Overpass+Mono:wght@300..700&family=Poiret+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sono:wght@200..800&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap')");
-  /* font-weight: 100 900; */
   font-style: normal;
 }
 
@@ -45,11 +44,6 @@
 	.gradient {
 		display: none !important;
 	}
-
-	.site-header {
-		color: black;
-		align-content: center;
-	}
 	
 	/* So much trial and error and so frustrating, referenced class material https://typography-interaction-2526.github.io/topic/responsive/#other-media-features */
 	#project-title {
@@ -58,6 +52,18 @@
 
 	#project-sub {
 		line-height: .5rem;
+	}
+
+	.header-text {
+		color: black;
+		opacity: 100%;
+		align-content: center;
+	}
+
+	.header-text p, h2, h3 {
+		color: black;
+		opacity: 100%;
+		align-content: center;
 	}
 
 	.footer-text {
@@ -102,49 +108,24 @@
 		margin-block-end: 1rem;
 	}
 
-	/* Title is overlaping text above and this seems to push it down without effecting everything  */
 	#special-print-head01 {
 		margin-block-start: 1rem;
 	}
 
-	/* quote is too close to H4 Meaning and Mood */
 	#special-print-head02 { 
 		break-before: page;
-		/* padding-block-start: 3.6rem; */
 	}
 }
 
 header{
     
 	min-height: 100vh;
-    /* background: linear-gradient(to top, #AF184D,#252475, #FF5802, #f7f7f7); */
     justify-content: space-between;
     position:relative;
     background: linear-gradient(to bottom, #AF184D,#4b2475, #FF5802, #f7f7f7);
 	background-size: 500% 500%;
 	animation: blend 10s ease infinite;
-
-
 	color: var(--color-wh);
-	/* height: 90vh;
-    
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between; */
-
-    /* grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr; */
-    /* justify-content: flex-start; */
-    /* text-align:center;
-    margin-block:auto;
-    width:100vw;
-	padding-block-start:1rem;
-	padding-inline: 1rem;
-    z-index:0;
-    background: linear-gradient(to bottom, #AF184D,#4b2475, #FF5802, #f7f7f7);
-	background-size: 500% 500%;
-	animation: blend 10s ease infinite;
-    text-align:center; */
 }
 
 .course{
@@ -297,16 +278,9 @@ h1 {
 
         @media (width < 600px) {
 		font-size: 2rem;
-        /* justify-self:center; */
         margin-inline:auto;
 		align-content:center;
 		margin-block-start: 20%;
-
-		/* padding-block-start: 8rem; */
-
-        /* margin-block-start: 16rem; */
-		/* padding-block-start: 1rem; */
-		/* font-weight: 200; */
 		}
     }
 	#author {
@@ -447,6 +421,23 @@ footer{
 
 
 .footer-text{
+	display:flex;
+    flex-direction: column;
+    text-align:center;
+	/* justify-content: center; */
+	width: 100vw;
+    height: 100vh;
+	padding-inline: 1rem;
+	padding-block-start:1.5rem;
+	padding-block-end:1rem;
+    position:absolute;
+	z-index:0;
+    /* padding-block-start: 2rem; */
+    color: var(--color-wh);
+	bottom:0;
+}
+
+.header-text {
 	display:flex;
     flex-direction: column;
     text-align:center;
