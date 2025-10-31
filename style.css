@@ -687,6 +687,9 @@ footer p{
         color:#FF5802;
         padding:2.5px;
     }
+    em{
+        font-weight: 700;
+    }
 
     .link01:hover{
         background:linear-gradient(to bottom, #256E81,#010D28);
